@@ -28,11 +28,6 @@ const config = [
     ],
     plugins: [
       resolve({ extensions }),
-      // babel({
-      //   exclude: 'node_modules/**',
-      //   extensions,
-      //   include: ['src/**/*'],
-      // }),
       babel(),
       commonjs({ include: 'node_modules/**' }),
       peerDepsExternal(),
